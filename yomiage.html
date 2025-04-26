@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>読み上げと言語切り替え</title>
+  <link rel="stylesheet" href="css/cssd.css" />
+</head>
+<body>
+  <header>
+    <h1>テキストを読み上げる</h1>
+  </header>
+
+  <div class="wrapper">
+    <button onclick="toggleLanguagejp()">言語切り替え 日本語</button>
+    <button onclick="toggleLanguageus()">言語切り替え 英語</button>
+    <button onclick="autoLanguage()">自動切り替え（日本語・英語）</button>
+
+    <p id="languageDisplay">現在の言語: 日本語</p>
+    <p id="Display">現在の音量: 100</p>
+
+    <input type="text" id="textInput" placeholder="ここにテキストを入力" />
+
+    <button onclick="speakText()">読み上げ</button>
+    <button onclick="confirmReload()">ページをリセット</button>
+
+    <label for="volumeControl">音量調整:</label>
+    <input type="range" id="volumeControl" min="0" max="100" step="1" value="100" />
+
+    <h2>0から100の範囲</h2>
+
+    <input type="number" id="volumeInput" placeholder="ここに音量を入力" />
+
+    <a href="index.html"><p>戻る</p></a>
+    <a href="password/suuji.html"><p>謎のサイト</p></a>
+  </div>
+
+  <a href="#" class="page-top"></a>
+
+  <script src="js/okens.js"></script>
+</body>
+</html>
